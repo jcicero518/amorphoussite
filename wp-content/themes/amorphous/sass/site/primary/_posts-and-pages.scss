@@ -1,0 +1,178 @@
+.sticky {
+	//display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.entry-content {
+	blockquote {
+		margin-left: 0;
+		border-left-color: $color__link-hover;
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+	.columns {
+		&.main-flex-columns {
+			display: block;
+			.main-flex-column {
+				display: block;
+				&:first-of-type {
+					flex-basis: 0;
+					width: 100%;
+				}
+				&:last-of-type {
+
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.columns {
+		&.main-flex-columns {
+			display: flex;
+			.main-flex-column {
+				display: flex;
+				&.is-main-content {
+					flex-grow: 1;
+					min-width: 75%;
+					.box {
+						flex-grow: 1;
+					}
+				}
+				&:first-of-type {
+					flex-basis: 50%;
+				}
+				&:last-of-type {
+
+				}
+			}
+		}
+	}
+}
+
+
+.featured-columns {
+	width: 100%;
+	.columns {
+		.column {
+			display: flex;
+			flex-basis: auto;
+		}
+	}
+}
+
+.entry-content, .box--site {
+	.card-image {
+		.card-image-figure {
+			background-repeat: no-repeat;
+			background-position: top center;
+			background-size: cover;
+			filter: blur(3px);
+			&.is-loaded {
+				filter: none;
+				transition: filter 1s;
+			}
+			> img {
+				display: block;
+				width: 100%;
+				opacity: 0;
+			}
+		}
+	}
+	.card-content {
+		.content {
+			white-space: normal;
+			a {
+				padding: 0;
+				display: inline;
+				border: none;
+			}
+		}
+	}
+	.tags {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.card-footer {
+		a {
+			padding: 0;
+			display: inline;
+			border: none;
+		}
+	}
+}
+
+.card-header {
+	background-color: darken($card_header_bg, 5%);
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.card {
+	&.box--site {
+		margin-bottom: 1.5em;
+		.columns {
+			margin: 0;
+		}
+		.card-content {
+			padding: 0.5em 0;
+			a {
+				margin: 0;
+				padding: 0;
+				display: inline;
+				white-space: normal;
+			}
+		}
+	}
+}
+
+.is-divider {
+	&.has-no-border {
+		border: none;
+		margin: 1em 0;
+	}
+}
+
+.box {
+	&.box--site {
+		margin-bottom: 1.5em;
+		.entry-header {
+			background-color: darken($card_header_bg, 5%);
+		}
+	}
+}
+
+h2.title {
+	&.has-inline-below {
+		margin-bottom: 1rem;
+	}
+}
+
+.footer {
+	.section {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}

@@ -1,0 +1,44 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+@mixin linear-gradient($from, $to) {
+	background: $to;
+	background: -moz-linear-gradient(top, $from 0%, $to 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+	background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+	background: -o-linear-gradient(top, $from 0%,$to 100%);
+	background: linear-gradient(to bottom, $from 0%,$to 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
+}
+
+@mixin radial-gradient($from, $to) {
+	background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+	background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background-color: $from;
+}

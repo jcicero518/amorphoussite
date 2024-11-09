@@ -1,0 +1,38 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+
+	&.widget_categories, &.code-catslist {
+		ul {
+			margin: 0;
+			list-style: none;
+			li {
+				list-style: none;
+				border-bottom: 1px solid #F2F2F2;
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+				display: flex;
+				justify-content: space-between;
+				a {
+
+				}
+				&.current-cat a {
+					color: $color__link-hover;
+					&:hover, &:focus {
+						color: $color__link-hover;
+					}
+				}
+			}
+		}
+	}
+
+	&.widget_social_icons {
+		ul {
+			margin: 0;
+		}
+	}
+}

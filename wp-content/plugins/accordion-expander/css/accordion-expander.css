@@ -1,0 +1,65 @@
+.ucmm_accordion_instance {
+  color: #222;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.ucmm_accordion_instance h3.ui-accordion-header {
+  padding: 16px;
+  color: #222;
+  background-color: #e8e8e8;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 25px !important;
+  cursor: pointer;
+}
+
+.ucmm_accordion_instance h3.ui-accordion-header:after {
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  content: "\f0d8";
+}
+
+.ucmm_accordion_instance h3.ui-accordion-header.ui-state-active,
+.ucmm_accordion_instance h3.ui-accordion-header:hover {
+  background-color: #e3e3e3 !important;
+  outline: none;
+}
+
+.ucmm_accordion_instance h3.ui-accordion-header.ui-state-active:after,
+.ucmm_accordion_instance h3.ui-accordion-header:hover:after {
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  content: "\f0d7";
+}
+
+.ucmm_accordion_instance div.ui-accordion-content {
+  padding: 12px 12px;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+
+}
+
+.ucmm_accordion_instance h3.ui-accordion-header div span a {
+  -webkit-transition: color 50ms linear;
+  transition: color 50ms linear;
+  color: #00a4df;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+}
+
+.ucmm_accordion_instance h3.ui-accordion-header div span a:hover {
+  color: #000000;
+  text-decoration: underline;
+}

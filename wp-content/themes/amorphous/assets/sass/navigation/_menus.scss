@@ -1,0 +1,140 @@
+
+.navbar {
+
+	ul {
+		margin: 0;
+		padding: 0;
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		padding: 20px 10px;
+		display: flex;
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+
+	.navbar-menu {
+		a {
+			font-family: $font__nav;
+			font-weight: bold;
+			@include font-size(0.875);
+			color: $color_navbar_link;
+			text-decoration: none;
+			text-transform: uppercase;
+			&:hover, &:focus {
+				color: $color_navbar_link-hover;
+				background-color: transparent;
+			}
+		}
+		.current_page_item > a,
+		.current-menu-item > a,
+		.current_page_ancestor > a,
+		.current-menu-ancestor > a {
+			color: $color_navbar_link-hover;
+			background-color: transparent;
+		}
+	}
+	.navbar-brand {
+		a {
+			@include font-size(1.25);
+			font-family: $font__logo;
+			color: $color_navbar_link;
+			font-weight: bold;
+			&:hover, &:focus {
+				background-color: $color_navbar_link_bg-hover;
+				color: $black;
+			}
+		}
+	}
+	a {
+
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+		color: $color_navbar_link-hover;
+		background-color: transparent;
+	}
+}
+
+.pagination {
+	padding-top: 1em;
+	padding-left: 1em;
+}
+
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	//display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		//display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

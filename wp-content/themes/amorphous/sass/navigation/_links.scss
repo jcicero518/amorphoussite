@@ -1,0 +1,57 @@
+a {
+	color: $color__link;
+	transition: all 250ms linear;
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+
+	&.button {
+		font-weight: bold;
+		color: $white;
+		background-color: $color__link-hover;
+		&:hover {
+			color: $white;
+			background-color: $black;
+			transition: all 250ms linear;
+		}
+	}
+}
+
+.entry-content {
+	a {
+
+	}
+	p, li {
+		a {
+			color: $color__link;
+			text-decoration: underline;
+			text-decoration-color: darken($color__link, 20%);
+			transition: all 250ms linear;
+			&:hover {
+				color: $color__link-hover;
+				text-decoration-color: darken($color__link-hover, 12%);
+			}
+		}
+	}
+}
+
+.entry-meta {
+	label {
+		font-weight: bold;
+	}
+	a {
+		transition: all 250ms linear;
+	}
+}

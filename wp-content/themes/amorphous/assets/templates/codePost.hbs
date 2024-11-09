@@ -1,0 +1,23 @@
+<div class="box hidden">
+    <header class="entry-header">
+        <h2 class="title"><a href="{{post_permalink}}">{{plaintitle}}</a></h2>
+        <div class="entry-meta">
+            <div class="field is-grouped is-grouped-multiline">
+                <div>
+                    <div class="tags has-addons">
+                        <p><label>Topics:</label>
+                        {{#each post_code_cat_tax}}
+                            <a class="tag is-link" title="{{name}}" href="{{link}}">{{name}}</a>
+                        {{/each}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="entry-content">
+        <div class="content"><blockquote>{{post_excerpt}}</blockquote></div>
+    </div>
+    <br />
+    <a class="button" title="Read More" href="{{post_permalink}}">Read More &raquo;</a>
+</div>

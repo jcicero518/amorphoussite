@@ -1,0 +1,398 @@
+[
+    {
+        "name": "brightnucleus/exceptions",
+        "version": "v0.3.0",
+        "version_normalized": "0.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/brightnucleus/exceptions.git",
+            "reference": "7eb528cd2cb71b045ced235c7b1b933d8cfe36a8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/brightnucleus/exceptions/zipball/7eb528cd2cb71b045ced235c7b1b933d8cfe36a8",
+            "reference": "7eb528cd2cb71b045ced235c7b1b933d8cfe36a8",
+            "shasum": ""
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4",
+            "squizlabs/php_codesniffer": "~2.5"
+        },
+        "time": "2017-04-11 06:19:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "BrightNucleus\\Exception\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alain Schlesser",
+                "email": "alain.schlesser@gmail.com"
+            }
+        ],
+        "description": "Exceptions shared across Bright Nucleus components."
+    },
+    {
+        "name": "brightnucleus/invoker",
+        "version": "v0.2.0",
+        "version_normalized": "0.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/brightnucleus/invoker.git",
+            "reference": "3434613153582395f7c10f54f692232fcdbff6c0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/brightnucleus/invoker/zipball/3434613153582395f7c10f54f692232fcdbff6c0",
+            "reference": "3434613153582395f7c10f54f692232fcdbff6c0",
+            "shasum": ""
+        },
+        "require": {
+            "brightnucleus/exceptions": ">=0.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4",
+            "squizlabs/php_codesniffer": "~2.5"
+        },
+        "time": "2016-11-12 09:49:12",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "BrightNucleus\\Invoker\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alain Schlesser",
+                "email": "alain.schlesser@gmail.com"
+            }
+        ],
+        "description": "Function and method invoking traits that match named arguments in the right order."
+    },
+    {
+        "name": "symfony/options-resolver",
+        "version": "v3.3.10",
+        "version_normalized": "3.3.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/options-resolver.git",
+            "reference": "ee4e22978fe885b54ee5da8c7964f0a5301abfb6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/options-resolver/zipball/ee4e22978fe885b54ee5da8c7964f0a5301abfb6",
+            "reference": "ee4e22978fe885b54ee5da8c7964f0a5301abfb6",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8"
+        },
+        "time": "2017-07-29 21:54:42",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\OptionsResolver\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony OptionsResolver Component",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "config",
+            "configuration",
+            "options"
+        ]
+    },
+    {
+        "name": "brightnucleus/config",
+        "version": "v0.4.10",
+        "version_normalized": "0.4.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/brightnucleus/config.git",
+            "reference": "ff50a5eaa0bb2865b84d347e230520e49af68ea1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/brightnucleus/config/zipball/ff50a5eaa0bb2865b84d347e230520e49af68ea1",
+            "reference": "ff50a5eaa0bb2865b84d347e230520e49af68ea1",
+            "shasum": ""
+        },
+        "require": {
+            "brightnucleus/exceptions": ">=0.2",
+            "symfony/options-resolver": ">=2.8"
+        },
+        "require-dev": {
+            "malukenho/docheader": "^0.1.5",
+            "mikey179/vfsstream": "^1.6",
+            "phpunit/phpunit": "^4.0|^5.0",
+            "squizlabs/php_codesniffer": "^2.8"
+        },
+        "time": "2017-02-16 00:44:34",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "BrightNucleus\\Config\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alain Schlesser",
+                "email": "alain.schlesser@gmail.com"
+            }
+        ],
+        "description": "Minimal, reusable Config component."
+    },
+    {
+        "name": "brightnucleus/settings",
+        "version": "v0.1.4",
+        "version_normalized": "0.1.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/brightnucleus/settings.git",
+            "reference": "e5c6bf27bb503660ca1c1849cbbba5d5ff04b659"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/brightnucleus/settings/zipball/e5c6bf27bb503660ca1c1849cbbba5d5ff04b659",
+            "reference": "e5c6bf27bb503660ca1c1849cbbba5d5ff04b659",
+            "shasum": ""
+        },
+        "require": {
+            "brightnucleus/config": ">=0.2",
+            "brightnucleus/exceptions": ">=0.2",
+            "brightnucleus/invoker": ">=0.1"
+        },
+        "time": "2016-05-14 05:37:36",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "BrightNucleus\\Settings\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alain Schlesser",
+                "email": "alain.schlesser@gmail.com"
+            }
+        ],
+        "description": "Config-driven WordPress settings."
+    },
+    {
+        "name": "brightnucleus/contracts",
+        "version": "v0.1.1",
+        "version_normalized": "0.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/brightnucleus/contracts.git",
+            "reference": "dee397db41a602ab57c0829c05ecfdafb5460464"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/brightnucleus/contracts/zipball/dee397db41a602ab57c0829c05ecfdafb5460464",
+            "reference": "dee397db41a602ab57c0829c05ecfdafb5460464",
+            "shasum": ""
+        },
+        "require-dev": {
+            "squizlabs/php_codesniffer": "~2.5"
+        },
+        "time": "2016-02-17 11:46:26",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "BrightNucleus\\Contract\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Alain Schlesser",
+                "email": "alain.schlesser@gmail.com"
+            }
+        ],
+        "description": "Set of segregated interfaces that are reused across different Bright Nucleus components."
+    },
+    {
+        "name": "brightnucleus/dependencies",
+        "version": "v0.3.1",
+        "version_normalized": "0.3.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/brightnucleus/dependencies.git",
+            "reference": "35fc1135d54f9e5b3234e45b5d41f8a7112fa3f1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/brightnucleus/dependencies/zipball/35fc1135d54f9e5b3234e45b5d41f8a7112fa3f1",
+            "reference": "35fc1135d54f9e5b3234e45b5d41f8a7112fa3f1",
+            "shasum": ""
+        },
+        "require": {
+            "brightnucleus/config": ">=0.2",
+            "brightnucleus/contracts": ">=0.1",
+            "brightnucleus/exceptions": ">=0.2",
+            "brightnucleus/invoker": ">=0.1"
+        },
+        "time": "2016-08-17 19:37:34",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "BrightNucleus\\Dependency\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alain Schlesser",
+                "email": "alain.schlesser@gmail.com"
+            }
+        ],
+        "description": "Config-driven WordPress dependencies."
+    },
+    {
+        "name": "squizlabs/php_codesniffer",
+        "version": "3.1.1",
+        "version_normalized": "3.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+            "reference": "d667e245d5dcd4d7bf80f26f2c947d476b66213e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d667e245d5dcd4d7bf80f26f2c947d476b66213e",
+            "reference": "d667e245d5dcd4d7bf80f26f2c947d476b66213e",
+            "shasum": ""
+        },
+        "require": {
+            "ext-simplexml": "*",
+            "ext-tokenizer": "*",
+            "ext-xmlwriter": "*",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0"
+        },
+        "time": "2017-10-16 22:40:25",
+        "bin": [
+            "bin/phpcs",
+            "bin/phpcbf"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Greg Sherwood",
+                "role": "lead"
+            }
+        ],
+        "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+        "homepage": "http://www.squizlabs.com/php-codesniffer",
+        "keywords": [
+            "phpcs",
+            "standards"
+        ]
+    },
+    {
+        "name": "wp-coding-standards/wpcs",
+        "version": "0.14.0",
+        "version_normalized": "0.14.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git",
+            "reference": "8cadf48fa1c70b2381988e0a79e029e011a8f41c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/WordPress-Coding-Standards/WordPress-Coding-Standards/zipball/8cadf48fa1c70b2381988e0a79e029e011a8f41c",
+            "reference": "8cadf48fa1c70b2381988e0a79e029e011a8f41c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3",
+            "squizlabs/php_codesniffer": "^2.9.0 || ^3.0.2"
+        },
+        "suggest": {
+            "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3"
+        },
+        "time": "2017-11-01 15:10:46",
+        "type": "phpcodesniffer-standard",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Contributors",
+                "homepage": "https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/graphs/contributors"
+            }
+        ],
+        "description": "PHP_CodeSniffer rules (sniffs) to enforce WordPress coding conventions",
+        "keywords": [
+            "phpcs",
+            "standards",
+            "wordpress"
+        ]
+    }
+]

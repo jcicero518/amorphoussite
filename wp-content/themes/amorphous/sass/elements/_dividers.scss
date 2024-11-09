@@ -1,0 +1,13 @@
+.is-divider {
+
+}
+
+.is-divider-vertical {
+
+}
+
+@media screen and (max-width: 900px) {
+  .is-divider-vertical {
+    display: none;
+  }
+}
